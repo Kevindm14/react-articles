@@ -1,11 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
 * {
   box-sizing: border-box;
   margin: 0;
-  font-family: 'Arial';
-}
-
-body {
-  background: #F5F5F5;
+  font-family: 'Lato', sans-serif;
 }
 
 a {
@@ -16,7 +14,6 @@ a {
   background: #FFF;
   border-top: 4px solid #0bd8a2;
   padding: 15px 0;
-  margin-bottom: 20px;
 }
 
 .menu .container-links {
@@ -27,7 +24,7 @@ a {
 
 .container {
   width: 90%;
-  max-width: 1100px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
@@ -35,7 +32,6 @@ a {
   color: #7f999e;
   border: 1px solid transparent;
   padding: 7px;
-  border-radius: 3px;
   font-size: 20px;
   font-weight: bold;
 }
@@ -44,16 +40,77 @@ a {
   color: #7f998e;
   font-size: 10px;
   padding: 10px;
-  border-radius: 3px;
 }
 
 .menu .container-links .links a:hover {
   border-bottom: 4px solid #01FAB9;
 }
 
+.space {
+  background: #F5F5F5;
+  height: 20px;
+  margin-bottom: 10px;
+}
+
 /* MAIN ARTICLES */
 
-main .container-articles {
+.breadcrumbs .create-article {
   background: #fff;
-  height: 1000px;
+  display: flex;
+  justify-content: center;
+}
+
+.breadcrumbs .create-article button {
+  padding: 10px;
+  background: #4a88f4;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.breadcrumbs .create-article button:hover {
+  background: #0C61F5;
+}
+
+.breadcrumbs .create-article button:focus {
+  outline: none;
+}
+
+.container-articles {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  background: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px 0;
+}
+
+/* CARDS */
+
+.cards {
+  height: 25rem;
+}
+
+.cards .card-body {
+  width: 20rem;
+  padding: 5px 0;
+}
+
+.container-articles .cards a {
+  display: inline-block;
+  margin: 0 10px;
+  color: #000;
+}
+
+.container-articles .cards img {
+  width: 300px;
+  height: 12rem;
+}
+
+.container-articles .cards .card-body {
+  cursor: auto;
 }

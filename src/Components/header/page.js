@@ -6,7 +6,7 @@ function Page() {
     <nav className="menu">
       <div className="container container-links">
         <div className="logo">
-          <Link to="/">React-CRUD</Link>
+          <Link to="/">StudioDev</Link>
         </div>
 
         <div className="links">
